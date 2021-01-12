@@ -1,0 +1,30 @@
+bookdown::gitbook:
+  includes:
+    in_header: hide_code.html # inspired by: https://stackoverflow.com/questions/45360998/code-folding-in-bookdown
+  css: style.css
+  config:
+    toc:
+      collapse: subsection
+      scroll_highlight: yes
+      before: |
+        <li><a href="http://chisholm.forestecosystems.ca">Colin's Site</a></li>
+        <li><a href="https://github.com/colinchisholm/bookdown_codefolding/">Project on Github</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    toolbar:
+      position: fixed
+    edit: null
+    download: ["pdf", "docx"]
+    search: yes
+    fontsettings:
+      theme: white
+      family: sans
+      size: 2
+    sharing: null
+    info: no
+bookdown::pdf_document2:
+  citation_package: natbib
+  keep_tex: yes
+  includes:
+    in_header: preamble.tex
+bookdown::word_document2: default

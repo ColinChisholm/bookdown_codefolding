@@ -1,0 +1,40 @@
+---
+title: "My new project/paper title"
+author: "[Colin Chisholm](http://chisholm.forestecosystems.ca)"
+date: "Last updated: `r format(Sys.time(), '%d %B, %Y')`"
+description: "Brief Description"
+url: 'https://github.com/colinchisholm/bookdown_codefolding/'
+github-repo: "colinchisholm/bookdown_codefolding"
+bibliography: book.bib
+link-citations: true
+site: bookdown::bookdown_site
+abstract: |
+  Put your amazing abstract here
+  
+---
+
+
+
+# Preamble {-}
+
+## Keywords {-}
+
+  - Coarse woody debris
+  - downed woody material
+  - forests
+  - harvest history
+  - aerial laser scanning
+  - predictive mapping
+
+
+## Authors {-}
+
+Colin Chisholm: Aleza Lake Research Forest Society, University of Northern British Columbia, 3333 University Way. 3333 University Way, Prince George, BC, Canada, V2N 4M8. <br>
+Tel. 250-960-6338 <br>
+E-mail. colin.chisholm@unbc.ca
+
+
+
+
+
+

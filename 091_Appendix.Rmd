@@ -1,0 +1,26 @@
+# (APPENDIX) Appendix {-}
+
+
+An area for supporting information
+
+
+# Generate pdf and docx versions
+
+Currently the code structure supports the generation of html, pdf, and docx formats.
+Although be warned that building multiple versions does create some challenges.
+I recommend this be maintained from throughout the project if the goal is publication and peer review.
+Should docx and pdf versions not be needed (e.g. web based workbook only) delete the following lines from the `_output.yml` file.
+
+```
+bookdown::pdf_document2:
+  latex_engine: pdflatex
+  citation_package: natbib
+  keep_tex: yes
+  includes:
+    in_header: preamble.tex
+bookdown::word_document2: default
+```
+
+## PDF document tweaks
+
+Numerous tweaks can be made to the pdf output.  Many adjustments can be made by editing the `premble.tex` file.  For example, line numbering can be turned off by commenting out lines `21 -22`.  Likewise linespacing can be removed commenting out lines `26-27`.  Note that in _LaTeX_ coding the `%` is a the comment symbol. 

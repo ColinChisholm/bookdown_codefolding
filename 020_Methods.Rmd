@@ -1,0 +1,26 @@
+# Methods
+
+
+```{r, include=FALSE}
+### Document settings
+knitr::opts_chunk$set(echo = TRUE,
+                      results = 'hold',
+                      message = FALSE,
+                      warning = FALSE,  out.width="100%", fig.align='center' )
+```
+
+
+```{r}
+library(tidyverse)
+library(knitr)
+library(nlme)
+library(knitr)
+library(kableExtra)
+
+## additional functions
+
+`%notin%` <- Negate(`%in%`)
+```
+
+
+Most likely I used something from @borcardNumericalEcology2018. 
