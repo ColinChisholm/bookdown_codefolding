@@ -3,8 +3,9 @@
 
 An area for supporting information
 
+# Appendix
 
-# Generate pdf and docx versions
+## Generate pdf and docx versions
 
 Currently the code structure supports the generation of html, pdf, and docx formats.
 Although be warned that building multiple versions does create some challenges.
@@ -23,4 +24,106 @@ bookdown::word_document2: default
 
 ## PDF document tweaks
 
-Numerous tweaks can be made to the pdf output.  Many adjustments can be made by editing the `premble.tex` file.  For example, line numbering can be turned off by commenting out lines `21 -22`.  Likewise linespacing can be removed commenting out lines `26-27`.  Note that in _LaTeX_ coding the `%` is a the comment symbol. 
+Numerous tweaks can be made to the pdf output.  Many adjustments can be made by editing the `premble.tex` file.  For example, line numbering can be turned off by commenting out lines `21 -22`.  Likewise linespacing can be removed commenting out lines `26-27`.  Note that in _LaTeX_ coding the `%` is a the comment symbol.
+
+## Custom blocks
+
+These blocks call specialized css styling for html output.
+
+:::{#box1 .green-box}
+Wrapping it up!
+:::
+
+```
+:::{#box1 .green-box}
+Wrapping it up!
+:::
+```
+
+
+
+:::{#caution-text .caution}
+- *Cras tincidunt* felis venenatis pretium iaculis ^[Nullam quis sem nunc].
+- Curabitur in **tortor at tellus** fermentum elementum vel quis sem.
+- That sums it up!
+:::
+
+```
+:::{#caution-text .caution}
+- *Cras tincidunt* felis venenatis pretium iaculis ^[Nullam quis sem nunc].
+- Curabitur in **tortor at tellus** fermentum elementum vel quis sem.
+- That sums it up!
+:::
+```
+
+
+
+
+
+:::{#warning-text .warning}
+Be careful, be gentle, be brave!
+And remember the above [box!](#box1)
+:::
+
+```
+:::{#warning-text .warning}
+Be careful, be gentle, be brave!
+And remember the above [box!](#box1)
+:::
+```
+
+
+:::{#tip-text .tip}
+A tip!
+:::
+
+```
+:::{#tip-text .tip}
+A tip!
+:::
+```
+
+
+
+
+:::{#note-text .note}
+A note!
+:::
+
+```
+:::{#note-text .note}
+A note!
+:::
+```
+
+
+
+:::{#important-text .important}
+I have something **important** to say here!
+:::
+
+```
+:::{#important-text .important}
+I have something **important** to say here!
+:::
+```
+
+
+
+
+:::{.orange-box}
+An orange box!!! Remember figure (\@ref(fig:example-plot))!
+:::
+
+```
+:::{.orange-box}
+An orange box!!! Remember figure (\@ref(fig:example-plot))!
+:::
+```
+
+
+## R session info {-}
+
+```{r session info, comment="", class.source = 'fold-show'}
+xfun::session_info()
+```
