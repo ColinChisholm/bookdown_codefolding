@@ -7,6 +7,15 @@ knitr::opts_chunk$set(echo = TRUE,
                       results = 'hold',
                       message = FALSE,
                       warning = FALSE,  out.width="100%", fig.align='center' )
+
+### Table formatting
+### Table outputs need to be declared when using kableExtra::kable_styling()
+
+    tformat <- "markdown" ## Unless it is latex or html ....
+    if (knitr::is_latex_output()) {tformat <- "latex"}
+    if (knitr::is_html_output())  {tformat <- "html"}
+
+
 ```
 
 
@@ -23,4 +32,4 @@ library(kableExtra)
 ```
 
 
-Most likely I used something from @borcardNumericalEcology2018. 
+Most likely I used something from @borcardNumericalEcology2018.

@@ -1,0 +1,41 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Borcard et~al.(2018)Borcard, Gillet, and
+  Legendre]{borcardNumericalEcology2018}
+Daniel Borcard, François Gillet, and Pierre Legendre.
+\newblock \emph{Numerical {Ecology} with {R}}.
+\newblock Use {R}! Springer International Publishing : Imprint: Springer, Cham,
+  2nd ed. 2018 edition, 2018.
+\newblock ISBN 978-3-319-71404-2.
+\newblock \doi{10.1007/978-3-319-71404-2}.
+
+\bibitem[Harmon et~al.(1986)Harmon, Franklin, Swanson, Sollins, Gregory,
+  Lattin, Anderson, Cline, Aumen, Sedell, Lienkaemper, Cromack, and
+  Cummins]{harmonEcologyCoarseWoody1986a}
+M.E. Harmon, J.F. Franklin, F.J. Swanson, P.~Sollins, S.V. Gregory, J.D.
+  Lattin, N.H. Anderson, S.P. Cline, N.G. Aumen, J.R. Sedell, G.W. Lienkaemper,
+  K.~Cromack, and K.W. Cummins.
+\newblock Ecology of {Coarse} {Woody} {Debris} in {Temperate} {Ecosystems}.
+\newblock In \emph{Advances in {Ecological} {Research}}, volume~34, pages
+  59--234. Elsevier, 1986.
+\newblock ISBN 978-0-12-013934-7.
+\newblock \doi{10.1016/S0065-2504(03)34002-4}.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0065250403340024}.
+
+\bibitem[Stokland et~al.(2012)Stokland, Siitonen, and
+  Jonsson]{stoklandBiodiversityDeadWood2012}
+Jogeir~N. Stokland, Juha Siitonen, and Bengt~Gunnar Jonsson.
+\newblock \emph{Biodiversity in {Dead} {Wood}}.
+\newblock Ecology, {Biodiversity} and {Conservation}. Cambridge University
+  Press, Cambridge, 2012.
+\newblock ISBN 978-0-521-88873-8.
+\newblock \doi{10.1017/CBO9781139025843}.
+\newblock URL \url{https://doi.org/10.1017/CBO9781139025843}.
+
+\end{thebibliography}

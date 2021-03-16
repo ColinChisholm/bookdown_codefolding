@@ -5,7 +5,8 @@ date: "Last updated: `r format(Sys.time(), '%d %B, %Y')`"
 description: "Brief Description"
 url: 'https://github.com/colinchisholm/bookdown_codefolding/'
 github-repo: "colinchisholm/bookdown_codefolding"
-bibliography: book.bib
+bibliography: [book.bib, packages.bib]
+csl: forest-ecology-and-management.csl
 link-citations: true
 site: bookdown::bookdown_site
 abstract: |
@@ -15,26 +16,90 @@ abstract: |
 
 
 
-# Preamble {-}
-
-## Keywords {-}
-
-  - Coarse woody debris
-  - downed woody material
-  - forests
-  - harvest history
-  - aerial laser scanning
-  - predictive mapping
 
 
-## Authors {-}
+# Bookdown Introduction 
 
-Colin Chisholm: Aleza Lake Research Forest Society, University of Northern British Columbia, 3333 University Way. 3333 University Way, Prince George, BC, Canada, V2N 4M8. <br>
+## YAML 
+
+1. `_bookdown.yml`:  Set your chapter name and the name of the output document.
+2. `_output.yml`: Settings for creating various version of the document (e.g. html, pdf, docx).  Citation management for pdf version is managed here. 
+3. `index.Rmd`: title, date, author, abstract, citation style, bibliography source file
+    - For citation style see: https://www.zotero.org/styles to get the style you want.
+
+
+## Document structure
+
+1. As many files as you want! 
+2. These will be compiled in the order of: index.Rmd, followed by numerical and alphabetical order.  I recommend: 
+    a. index.Rmd
+    b. 10_Introduction.Rmd
+    c. 20_Methods.Rmd
+    d. 30_Results.Rmd
+    e. 40_Discussion.Rmd 
+    f. 50_Conclusion.Rmd
+    g. 80_References.Rmd
+    h. 90_Appendices.Rmd
+    
+Examples of these are provided in the build.  Note: I use steps of 10 so that additional chapters could be added in without having to rename everything. For example, you could have multiple methods sections by adding a 32_MoreMethods.Rmd. 
+
+
+## Writing with analysis example
+
+See section \@ref(basic-example) for an example that includes
+
+1. Essential libraries loaded
+2. Basic markdown syntax: Headings, text formatting
+3. Code block 
+4. Figure 
+5. Table 
+
+
+
+## Compile document 
+
+1. Build whole document 
+2. Knit a single page
+
+_build on a regular basis._.  If your code does not run properly the socument will not compile. 
+
+## Key Resources 
+
+1. [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
+2. [Bookdown manual](https://bookdown.org/yihui/bookdown/)
+3. [Rmarkdown Manual](https://bookdown.org/yihui/rmarkdown/)
+4. [kableExtra](https://haozhu233.github.io/kableExtra/) for managing tables 
+5. [A Roundup of R Tools for Handling BibTeX](https://ropensci.org/blog/2020/05/07/rmd-citations/).  The [`citr`](https://github.com/crsh/citr) package looks awesome for linking citations similar to zotero's word addon. 
+
+    
+
+
+
+-------------
+
+
+:::{#preparedby .note}
+**Prepared by** 
+
+_note that this shaded box only shows up the html version of this document_
+
+Colin Chisholm: Aleza Lake Research Forest Society, University of Northern British Columbia, 3333 University Way, Prince George, BC, Canada, V2N 4M8. <br>
 Tel. 250-960-6338 <br>
 E-mail. colin.chisholm@unbc.ca
 
+:::
 
 
 
+:::{#important .important}
 
+## Generate bibliography references for R packages
 
+The code here saves the listed packages into a .bib file.  
+
+```{r include=TRUE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(.packages(), 'bookdown', 'knitr', 'rmarkdown'), 'packages.bib')
+```
+
+:::

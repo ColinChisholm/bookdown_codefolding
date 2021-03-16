@@ -26,7 +26,7 @@ bookdown::word_document2: default
 
 Numerous tweaks can be made to the pdf output.  Many adjustments can be made by editing the `premble.tex` file.  For example, line numbering can be turned off by commenting out lines `21 -22`.  Likewise linespacing can be removed commenting out lines `26-27`.  Note that in _LaTeX_ coding the `%` is a the comment symbol.
 
-## Custom blocks
+## Custom blocks for html
 
 These blocks call specialized css styling for html output.
 
@@ -112,7 +112,7 @@ I have something **important** to say here!
 
 
 :::{.orange-box}
-An orange box!!! Remember figure (\@ref(fig:example-plot))!
+An orange box!!! Remember figure (\@ref(fig:irisphoto))!
 :::
 
 ```
