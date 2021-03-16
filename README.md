@@ -16,6 +16,6 @@ Last update adds:
     - inserting tables with captions and cross referencing
 
 
-Colin Chisholm
-initial Jan. 12, 2021
+Colin Chisholm    
+initial Jan. 12, 2021     
 last updated March 16, 2021
