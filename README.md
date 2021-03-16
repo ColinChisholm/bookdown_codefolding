@@ -1,6 +1,11 @@
 # Bookdown with code folding 
 
-A [bookdown](https://bookdown.org/yihui/bookdown/) template with code folding
+To use this repository clone it using git: `git clone https://github.com/ColinChisholm/bookdown_codefolding.git`    
+Or click the code buttom above and then select download. 
+
+
+
+This project is a [bookdown](https://bookdown.org/yihui/bookdown/) project that includes a code-folding feature (i.e. view or hide code at the click of a button).
 
 - bookdown is on github at: https://github.com/rstudio/bookdown
 - code folding was discussed and generally solved on [stackexchange](https://stackoverflow.com/questions/45360998/code-folding-in-bookdown).  [J. Zobolas](https://github.com/bblodfon) adapted it to [bookdown template](https://github.com/bblodfon/rtemps).  
@@ -8,7 +13,7 @@ A [bookdown](https://bookdown.org/yihui/bookdown/) template with code folding
 This project simply includes any minor tweaks that I have made to the template.  It is intended for personal use but if you like it please feel free to use it. 
 
 Last update adds: 
-1. A number of resources for working with rmarkdown and bookdown,
+1. A number of resources for working with rmarkdown and bookdown
 2. Examples for:
     - citing literature
     - creating cross references 
