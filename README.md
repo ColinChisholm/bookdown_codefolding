@@ -8,7 +8,8 @@ Or click the code buttom above and then select download.
 This is an unofficial [bookdown](https://bookdown.org/yihui/bookdown/) project that includes a code-folding feature (i.e. view or hide code at the click of a button).
 
 - bookdown is on github at: https://github.com/rstudio/bookdown
-- code folding was discussed and generally solved on [stackexchange](https://stackoverflow.com/questions/45360998/code-folding-in-bookdown).  [J. Zobolas](https://github.com/bblodfon) adapted it to [bookdown template](https://github.com/bblodfon/rtemps).  
+- code folding was discussed and generally solved on [stackexchange](https://stackoverflow.com/questions/45360998/code-folding-in-bookdown).    
+- [J. Zobolas](https://github.com/bblodfon) adapted it to [bookdown template](https://github.com/bblodfon/rtemps).  
 
 This project simply includes minor tweak and examples that I have found useful.  It is intended for personal use but if you like it please feel free to use it. 
 
