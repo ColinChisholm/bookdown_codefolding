@@ -3,6 +3,7 @@ bookdown::gitbook:
   includes:
     in_header: hide_code.html # inspired by: https://stackoverflow.com/questions/45360998/code-folding-in-bookdown
   css: style.css
+  split_bib: false
   config:
     toc_depth: 3
     toc:
@@ -25,10 +26,12 @@ bookdown::gitbook:
     sharing: null
     info: no
 bookdown::pdf_document2:
+  split_bib: false
   toc: true
   toc_depth: 3
   number_sections: true
   keep_tex: yes
   includes:
     in_header: preamble.tex
-bookdown::word_document2: default
+bookdown::word_document2: 
+  split_bib: false
